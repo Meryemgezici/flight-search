@@ -3,10 +3,12 @@ import { FaLocationDot } from "react-icons/fa6";
 import { SlCalender } from "react-icons/sl";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Select from "react-select";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
+import { useDispatch, useSelector } from "react-redux";
+import { getFlights } from "../redux/actions/flightsAction";
 
 const HomePage = () => {
     const [departure, setDeparture] = useState(null);
@@ -16,6 +18,14 @@ const HomePage = () => {
     const [returnDate, setReturnDate] = useState(null);
     const today = new Date();
     const navigate = useNavigate();
+    const dispatch = useDispatch();
+    const state = useSelector((store) => store.flightsSlice);
+
+    useEffect(() => {
+        dispatch(getFlights());
+    }, []);
+
+    console.log(state.flights);
 
     const formatDate = (date) => {
         if (!date) return null;
