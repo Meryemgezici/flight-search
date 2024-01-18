@@ -1,15 +1,19 @@
+import { Route } from 'react-router-dom'
+import { BrowserRouter, Routes } from "react-router-dom"
 import Header from "./components/Header"
-import SearchBar from "./components/SearchBar"
+import HomePage from './pages/HomePage'
+import ListPage from './pages/ListPage'
 
 
 function App() {
-
-
   return (
-    <>
+    <BrowserRouter>
       <Header />
-      <SearchBar />
-    </>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/listpage" element={<ListPage />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 

@@ -1,0 +1,102 @@
+{
+    "flights": [
+      {
+        "id": 1,
+        "departure": "istanbul",
+        "destination": "izmir",
+        "date": "10/2/2024",
+        "price": "400 TL",
+        "emptySeats": 15,
+        "departureTime": "18:30",
+        "travelTime": "7 saat 30 dakika",
+        "departureFlights":"yes",
+        "destinationFlights":"no"
+      },
+      {
+        "id": 2,
+        "departure": "istanbul",
+        "destination": "izmir",
+        "date": "10/2/2024",
+        "price": "400 TL",
+        "emptySeats": 15,
+        "departureTime": "22:30",
+        "travelTime": "7 saat 30 dakika",
+        "departureFlights":"yes",
+        "destinationFlights":"no"
+      },
+      {
+        "id": 3,
+        "departure": "ankara",
+        "destination": "izmir",
+        "date": "10/2/2024",
+        "price": "400 TL",
+        "emptySeats": 15,
+        "departureTime": "19:00",
+        "travelTime": "7 saat 30 dakika",
+        "departureFlights":"yes",
+        "destinationFlights":"no"
+      },
+      {
+        "id": 4,
+        "departure": "ankara",
+        "destination": "aydın",
+        "date": "10/2/2024",
+        "price": "400 TL",
+        "emptySeats": 15,
+        "departureTime": "17:00",
+        "travelTime": "7 saat 30 dakika",
+        "departureFlights":"yes",
+        "destinationFlights":"no"
+      },
+      {
+        "id": 5,
+        "departure": "istanbul",
+        "destination": "izmir",
+        "date": "10/2/2024",
+        "price": "400 TL",
+        "emptySeats": 15,
+        "departureTime": "18:30",
+        "travelTime": "7 saat 30 dakika",
+        "departureFlights":"no",
+        "destinationFlights":"yes"
+      },
+      {
+        "id": 6,
+        "departure": "istanbul",
+        "destination": "izmir",
+        "date": "10/2/2024",
+        "price": "400 TL",
+        "emptySeats": 15,
+        "departureTime": "22:30",
+        "travelTime": "7 saat 30 dakika",
+        "departureFlights":"no",
+        "destinationFlights":"yes"
+      },
+      {
+        "id": 7,
+        "departure": "ankara",
+        "destination": "izmir",
+        "date": "10/2/2024",
+        "price": "400 TL",
+        "emptySeats": 15,
+        "departureTime": "19:00",
+        "travelTime": "7 saat 30 dakika",
+        "departureFlights":"no",
+        "destinationFlights":"yes"
+      },
+      {
+        "id": 8,
+        "departure": "ankara",
+        "destination": "aydın",
+        "date": "10/2/2024",
+        "price": "400 TL",
+        "emptySeats": 15,
+        "departureTime": "17:00",
+        "travelTime": "7 saat 30 dakika",
+        "departureFlights":"no",
+        "destinationFlights":"yes"
+      }
+    ]
+    
+  }
+  

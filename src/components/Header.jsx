@@ -1,12 +1,6 @@
-import {
-    AiFillBell,
-    AiOutlineSearch,
-    AiFillYoutube,
-} from 'react-icons/ai';
 import { GiCommercialAirplane } from "react-icons/gi";
+
 const Header = () => {
-
-
     return (
         <header className="flex justify-between items-center p-4 bg-[#0F0F0F] text-white ">
             <button className="flex items-center gap-3 text-3xl">
@@ -26,7 +20,6 @@ const Header = () => {
                 >
                     Üye Ol
                 </button>
-                {/* <AiFillBell className="text-2xl" /> */}
             </div>
 
 
