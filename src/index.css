@@ -11,9 +11,7 @@
 }
 
 body {
-  background: #242424;
   color: white;
   font-family: 'poppins';
   font-weight: 400;
-  min-height: 100vh;
 }

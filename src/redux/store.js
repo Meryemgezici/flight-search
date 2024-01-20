@@ -3,9 +3,8 @@ import flightsSlice from "./slices/flightsSlice";
 
 const store = configureStore({
   reducer: {
-    flightsSlice
+    flightsSlice,
   },
-  
 });
 
 export default store;
