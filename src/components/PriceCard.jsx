@@ -1,4 +1,3 @@
-
 const PriceCard = ({pricePackage,price}) => {
     return (
         <div className="flex flex-col gap-3 bg-white border rounded-lg">

@@ -12,15 +12,15 @@ const ListPage = () => {
     const location = useLocation();
 
     const searchParams = new URLSearchParams(location.search);
-    const departure = searchParams.get("departure");
-    const destination = searchParams.get("destination");
+    const departureCode = searchParams.get("departureCode");
+    const destinationCode = searchParams.get("destinationCode");
     const date = searchParams.get("date");
 
     useEffect(() => {
-        if (departure && destination && date) {
-            dispatch(filterFlights({ departure, destination, date }));
+        if (departureCode && destinationCode && date) {
+            dispatch(filterFlights({ departureCode, destinationCode, date }));
         }
-    }, [dispatch, departure, destination, date]);
+    }, [dispatch, departureCode, destinationCode, date]);
 
     return (
         <div className="bg-white min-h-screen text-black">
@@ -38,7 +38,7 @@ const ListPage = () => {
                         </h2>
                         <div className="flex flex-col gap-4  mx-auto mb-32 mt-7 max-w-[1000px]" >
                             <FilterCard/>
-                            <div className="flex flex-col gap-6 bg-[#F9F9F9]  p-4  ">
+                            <div className="flex flex-col gap-6 bg-[#F9F9F9]  p-4 rounded-lg">
                                 {state.filteredFlights.map((flight) => (
                                     <FlightCard flight={flight} key={flight.id}/>
                                 ))}

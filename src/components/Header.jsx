@@ -21,8 +21,6 @@ const Header = () => {
                     Üye Ol
                 </button>
             </div>
-
-
         </header>
     );
 };

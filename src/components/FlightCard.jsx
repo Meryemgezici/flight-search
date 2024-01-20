@@ -10,7 +10,7 @@ const FlightCard = ({ flight }) => {
           <div className="flex items-center gap-14">
             <div className="flex flex-col gap-1">
               <span className="font-bold">{flight.departureTime}</span>
-              <span className="text-[#697886] text-sm">TGD</span>
+              <span className="text-[#697886] text-sm">{flight.departureCode.toUpperCase()}</span>
               <span className="text-[#697886] text-sm">{flight.departure.charAt(0).toUpperCase() + flight.departure.slice(1)}</span>
             </div>
             <div className="flex flex-col items-center">
@@ -24,7 +24,7 @@ const FlightCard = ({ flight }) => {
             </div>
             <div className="flex flex-col gap-1">
               <span className="font-bold">{flight.destinationTime}</span>
-              <span className="text-[#697886] text-sm">TGD</span>
+              <span className="text-[#697886] text-sm">{flight.destinationCode.toUpperCase()}</span>
               <span className="text-[#697886] text-sm">{flight.destination.charAt(0).toUpperCase() + flight.destination.slice(1)}</span>
             </div>
           </div>
@@ -35,12 +35,9 @@ const FlightCard = ({ flight }) => {
           </div>
         </div>
       </div>
-      <PriceCard pricePackage={"ECONOMY"} price={flight.economicPrice}/>
-      <PriceCard pricePackage={"BUSINESS"} price={flight.businessPrice}/>
-   
+      <PriceCard pricePackage={"ECONOMY"} price={flight.economicPrice} />
+      <PriceCard pricePackage={"BUSINESS"} price={flight.businessPrice} />
     </div>
-
-
   );
 };
 

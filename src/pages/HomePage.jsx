@@ -11,8 +11,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { getFlights } from "../redux/actions/flightsAction";
 
 const HomePage = () => {
-    const [departure, setDeparture] = useState(null);
-    const [destination, setDestination] = useState(null);
+    const [departureCode, setDepartureCode] = useState(null);
+    const [destinationCode, setDestinationCode] = useState(null);
     const [date, setDate] = useState(null);
     const [isRoundTrip, setIsRoundTrip] = useState(true);
     const [returnDate, setReturnDate] = useState(null);
@@ -38,14 +38,14 @@ const HomePage = () => {
     };
 
     const handleSearch = () => {
-        if (departure && destination && date && (!isRoundTrip || returnDate)) {
+        if (departureCode && destinationCode && date && (!isRoundTrip || returnDate)) {
             // Check if departure and destination are different
-            if (departure.value !== destination.value) {
+            if (departureCode.value !== destinationCode.value) {
                 const formattedDate = formatDate(date);
                 const formattedReturnDate = isRoundTrip ? formatDate(returnDate) : null;
 
                 navigate(
-                    `/listpage?departure=${departure.value}&destination=${destination.value}&date=${formattedDate}&returnDate=${formattedReturnDate}`
+                    `/listpage?departureCode=${departureCode.value}&destinationCode=${destinationCode.value}&date=${formattedDate}&returnDate=${formattedReturnDate}`
                 );
             } else {
                 toast.error("Nereden ve Nereye şehirleri aynı olamaz.");
@@ -91,8 +91,8 @@ const HomePage = () => {
                         <Select
                             className="text-black w-52"
                             options={locationOpt}
-                            value={departure}
-                            onChange={(selectedOption) => setDeparture(selectedOption)}
+                            value={departureCode}
+                            onChange={(selectedOption) => setDepartureCode(selectedOption)}
                             placeholder="Seçiniz"
                             styles={{
                                 valueContainer: (provided) => ({
@@ -109,8 +109,8 @@ const HomePage = () => {
                         <label>Nereye:</label>
                         <Select
                             options={locationOpt}
-                            value={destination}
-                            onChange={(selectedOption) => setDestination(selectedOption)}
+                            value={destinationCode}
+                            onChange={(selectedOption) => setDestinationCode(selectedOption)}
                             className="text-black w-52"
                             styles={{
                                 valueContainer: (provided) => ({
