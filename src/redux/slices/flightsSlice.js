@@ -19,12 +19,19 @@ const flightsSlice = createSlice({
   initialState,
   reducers: {
     filterFlights: (state, action) => {
-      const { departureCode, destinationCode, date ,destinationFlights,departureFlights} = action.payload;
+      const {
+        departureCode,
+        destinationCode,
+        date,
+        destinationFlights,
+        departureFlights,
+      } = action.payload;
 
       state.filteredFlights = state.flights.filter((flight) => {
         return (
           flight.departureCode.toLowerCase() === departureCode?.toLowerCase() &&
-          flight.destinationCode.toLowerCase() === destinationCode?.toLowerCase() &&
+          flight.destinationCode.toLowerCase() ===
+            destinationCode?.toLowerCase() &&
           flight.date === date &&
           flight.destinationFlights === destinationFlights &&
           flight.departureFlights === departureFlights
@@ -34,7 +41,7 @@ const flightsSlice = createSlice({
     sortFlights: (state, action) => {
       const { sortBy } = action.payload;
 
-      const sortedFlights = [...state.filteredFlights]; 
+      const sortedFlights = [...state.filteredFlights];
 
       sortedFlights.sort((a, b) => {
         const priceA = parseInt(a.economicPrice.replace(" TL", ""), 10);

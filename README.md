@@ -129,7 +129,6 @@ Listeleme sayfası, kullanıcının yaptığı arama sorgusuna göre dönen uçu
 - **Yükleniyor Animasyonu:** Sunucudan cevap gelene kadar kullanıcıya "yükleniyor" animasyonu gösterilir.
 - **Uçuş Detayları:** Listelenen uçuşlar kalkış saati, dönüş saati, uçuş uzunluğu, fiyat ve diğer detaylar ile gösterilir.
 
-
 ## Uygun Uçuşlar
 
 ### 1. Istanbul - Izmir (Flight ID: 1)

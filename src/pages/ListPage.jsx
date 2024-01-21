@@ -89,11 +89,7 @@ const ListPage = () => {
                         </h1>}
                     </div>
                 </div>
-
-
             </>}
-
-
         </>
     )
 }
