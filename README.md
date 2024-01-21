@@ -258,3 +258,7 @@ Listeleme sayfası, kullanıcının yaptığı arama sorgusuna göre dönen uçu
 - **Departure Flights:** No
 - **Destination Flights:** Yes
 - **Plane Type:** Boeing 737-800 - Narrow body
+
+<h3>Ekran Görüntüsü</h3>
+
+ ![](project.gif)
