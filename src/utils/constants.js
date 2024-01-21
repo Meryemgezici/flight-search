@@ -1,12 +1,9 @@
-// export const locationOpt = [
-//   { value: "istanbul", label: "İstanbul" },
-//   { value: "ankara", label: "Ankara" },
-//   { value: "izmir", label: "İzmir" },
-//   { value: "antalya", label: "Antalya" },
-//   { value: "bursa", label: "Bursa" },
-// ];
-
-export const sortOpt = ["Ücrete göre", "Kalkış saati", "Varış saati","Uçuş süresi"];
+export const sortOpt = [
+  "Ücrete göre",
+  "Kalkış saati",
+  "Varış saati",
+  "Uçuş süresi",
+];
 
 export const locationOpt = [
   { value: "esb", label: "Ankara Esenboğa Havalimanı (ESB/LTAC)" },
@@ -17,13 +14,13 @@ export const locationOpt = [
   { value: "erc", label: "Erzincan Havalimanı (ERC/LTCD)" },
   { value: "erz", label: "Erzurum Havalimanı (ERZ/LTCE)" },
   { value: "aoe", label: "Eskişehir Anadolu Havalimanı (AOE/LTBY)" },
-  { value: "ist", label: "İstanbul Havalimanı (IST/LTFM)" },
-  { value: "saw", label: "İstanbul Sabiha Gökçen Havalimanı (SAW/LTFJ)" },
-  { value: "abd", label: "İzmir Adnan Menderes Havalimanı (ADB/LTBJ)" },
+  { value: "ist", label: "Istanbul Havalimanı (IST/LTFM)" },
+  { value: "saw", label: "Istanbul Sabiha Gökçen Havalimanı (SAW/LTFJ)" },
+  { value: "abd", label: "Izmir Adnan Menderes Havalimanı (ADB/LTBJ)" },
   { value: "kya", label: "Konya Havalimanı (KYA/LTAN)" },
   { value: "ogu", label: "Ordu-Giresun Havalimanı (OGU/LTCB)" },
   { value: "szf", label: "Samsun Çarşamba Havalimanı (SZF/LTFH)" },
   { value: "tzx", label: "Trabzon Havalimanı (TZX/LTCG)" },
   { value: "van", label: "Van Ferit Melen Havalimanı (VAN/LTCI)" },
-  { value: "onq", label: "Zonguldak Havalimanı (ONQ/LTAS)" }
+  { value: "onq", label: "Zonguldak Havalimanı (ONQ/LTAS)" },
 ];

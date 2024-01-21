@@ -122,7 +122,7 @@
       {
         "id": 8,
         "departure": "ankara",
-        "destination": "aydın",
+        "destination": "izmir",
         "departureCode":"esb",
         "destinationCode":"abd",
         "date": "10/2/2024",

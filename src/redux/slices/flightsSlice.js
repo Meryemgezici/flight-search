@@ -29,7 +29,7 @@ const flightsSlice = createSlice({
         );
       });
     },
-    sortFlightsByPrice: (state, action) => {
+    sortFlights: (state, action) => {
       const { sortBy } = action.payload;
 
       const sortedFlights = [...state.filteredFlights]; 
@@ -88,4 +88,4 @@ const flightsSlice = createSlice({
 });
 
 export default flightsSlice.reducer;
-export const { filterFlights, sortFlightsByPrice } = flightsSlice.actions;
+export const { filterFlights, sortFlights } = flightsSlice.actions;

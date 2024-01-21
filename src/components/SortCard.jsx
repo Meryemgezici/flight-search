@@ -1,18 +1,18 @@
 import { useState } from 'react';
 import { useDispatch } from "react-redux";
 import { sortOpt } from "../utils/constants"
-import { sortFlightsByPrice } from "../redux/slices/flightsSlice";
+import { sortFlights } from "../redux/slices/flightsSlice";
 
-const FilterCard = () => {
+const SortCard = () => {
   const dispatch = useDispatch();
   const [clickCount, setClickCount] = useState(1);
 
   const handleClick = (sortOp) => {
     if (clickCount === 1) {
-      dispatch(sortFlightsByPrice({ sortBy: sortOp + " artan" }));
+      dispatch(sortFlights({ sortBy: sortOp + " artan" }));
       setClickCount(clickCount + 1);
     } else {
-      dispatch(sortFlightsByPrice({ sortBy: sortOp + " azalan" }));
+      dispatch(sortFlights({ sortBy: sortOp + " azalan" }));
       setClickCount(1);
     }
   };
@@ -29,4 +29,4 @@ const FilterCard = () => {
   )
 }
 
-export default FilterCard
+export default SortCard
