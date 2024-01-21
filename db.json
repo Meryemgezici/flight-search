@@ -9,12 +9,9 @@
         "date": "10/2/2024",
         "economicPrice": "500 TL",
         "businessPrice": "2000 TL",
-        "emptySeats": 15,
         "departureTime": "18:30",
         "destinationTime": "21:30",
         "flightTime": "2 s 0 d",
-        "departureFlights":"yes",
-        "destinationFlights":"no",
         "planeType":"Boeing 737-800 - Dar gövde"
       },
       {
@@ -26,12 +23,9 @@
         "date": "10/2/2024",
         "economicPrice": "400 TL",
         "businessPrice": "2000 TL",
-        "emptySeats": 15,
         "departureTime": "21:30",
         "destinationTime": "23:30",
         "flightTime": "2 s 0 d",
-        "departureFlights":"yes",
-        "destinationFlights":"no",
         "planeType":"Boeing 737-800 - Dar gövde"
       },
       {
@@ -43,12 +37,9 @@
         "date": "10/2/2024",
         "economicPrice": "400 TL",
         "businessPrice": "2000 TL",
-        "emptySeats": 15,
         "departureTime": "08:00",
         "destinationTime": "20:30",
         "flightTime": "12 s 30 dakika",
-        "departureFlights":"yes",
-        "destinationFlights":"no",
         "planeType":"Boeing 737-800 - Dar gövde"
       },
       {
@@ -60,29 +51,23 @@
         "date": "10/2/2024",
         "economicPrice": "400 TL",
         "businessPrice": "2000 TL",
-        "emptySeats": 15,
         "departureTime": "13:00",
         "destinationTime": "14:30",
         "flightTime": "1 s 30 d",
-        "departureFlights":"yes",
-        "destinationFlights":"no",
         "planeType":"Boeing 737-800 - Dar gövde"
       },
       {
         "id": 5,
-        "departure": "Erzurum",
-        "destination": "Eskişehir",
-        "departureCode":"erz",
-        "destinationCode":"aoe",
-        "date": "10/2/2024",
+        "departure": "İstanbul",
+        "destination": "İzmir",
+        "departureCode":"ist",
+        "destinationCode":"abd",
+        "date": "11/2/2024",
         "economicPrice": "600 TL",
         "businessPrice": "2000 TL",
-        "emptySeats": 15,
         "departureTime": "23:00",
         "destinationTime": "03:30",
         "flightTime": "4 s 30 d",
-        "departureFlights":"no",
-        "destinationFlights":"yes",
         "planeType":"Boeing 737-800 - Dar gövde"
       },
       {
@@ -94,12 +79,9 @@
         "date": "10/2/2024",
         "economicPrice": "400 TL",
         "businessPrice": "2000 TL",
-        "emptySeats": 15,
         "departureTime": "08:30",
         "destinationTime": "10:40",
         "flightTime": "2 s 10 d",
-        "departureFlights":"no",
-        "destinationFlights":"yes",
         "planeType":"Boeing 737-800 - Dar gövde"
       },
       {
@@ -111,12 +93,9 @@
         "date": "10/2/2024",
         "economicPrice": "700 TL",
         "businessPrice": "2000 TL",
-        "emptySeats": 15,
         "departureTime": "19:00",
         "destinationTime": "23:30",
         "flightTime": "4 s 30 d",
-        "departureFlights":"no",
-        "destinationFlights":"yes",
         "planeType":"Boeing 737-800 - Dar gövde"
       },
       {
@@ -128,12 +107,9 @@
         "date": "10/2/2024",
         "economicPrice": "600 TL",
         "businessPrice": "2000 TL",
-        "emptySeats": 15,
         "departureTime": "17:00",
         "destinationTime": "20:30",
         "flightTime": "3 s 30 d",
-        "departureFlights":"no",
-        "destinationFlights":"yes",
         "planeType":"Boeing 737-800 - Dar gövde"
       }
     ]

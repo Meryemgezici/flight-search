@@ -19,12 +19,13 @@ const flightsSlice = createSlice({
   initialState,
   reducers: {
     filterFlights: (state, action) => {
-      const { departureCode, destinationCode, date } = action.payload;
+      const { departureCode, destinationCode, date ,destinationFlights} = action.payload;
 
       state.filteredFlights = state.flights.filter((flight) => {
         return (
           flight.departureCode.toLowerCase() === departureCode?.toLowerCase() &&
           flight.destinationCode.toLowerCase() === destinationCode?.toLowerCase() &&
+          flight.destinationFlights === destinationFlights &&
           flight.date === date
         );
       });

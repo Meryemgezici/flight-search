@@ -1,7 +1,5 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
-import { getFlights } from "../redux/actions/flightsAction";
 import { toast } from "react-toastify";
 import Select from "react-select";
 import { locationOpt } from "../utils/constants";
@@ -10,6 +8,7 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { SlCalender } from "react-icons/sl";
 import view from '../images/view.png';
+import tr from 'date-fns/locale/tr'; 
 
 const SearchBar = () => {
   const [departureCode, setDepartureCode] = useState(null);
@@ -39,7 +38,7 @@ const SearchBar = () => {
           const formattedReturnDate = isRoundTrip ? formatDate(returnDate) : null;
 
           navigate(
-            `/listpage?departureCode=${departureCode.value}&destinationCode=${destinationCode.value}&date=${formattedDate}&returnDate=${formattedReturnDate}`
+            `/listpage?departureCode=${departureCode.value}&destinationCode=${destinationCode.value}&departureDate=${formattedDate}&returnDate=${formattedReturnDate}`
           );
         } else {
           toast.error("Dönüş tarihi, gidiş tarihinden önce olamaz.");
@@ -140,6 +139,7 @@ const SearchBar = () => {
                 dateFormat="dd/MM/yyyy"
                 className="border rounded-md w-52 p-[6px] pl-8 text-black h-[70px]"
                 placeholderText="Seçiniz"
+                locale={tr}
                 minDate={today}
               />
               <SlCalender className="absolute top-[50px] left-2 text-gray-700" />
@@ -155,6 +155,7 @@ const SearchBar = () => {
                   className="border rounded-md w-52 p-[6px] pl-8 text-black h-[70px]"
                   placeholderText="Seçiniz"
                   minDate={today}
+                  locale={tr}
                 />
                 <SlCalender className="absolute top-[50px] left-2 text-gray-700" />
               </div>
