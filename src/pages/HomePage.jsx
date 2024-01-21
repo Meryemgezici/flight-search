@@ -14,10 +14,8 @@ const HomePage = () => {
 
 
     return (
-        <>
-           
+        <>  
                 <SearchBar />
-            
 
         </>
     );

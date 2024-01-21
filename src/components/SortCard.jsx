@@ -19,7 +19,7 @@ const SortCard = () => {
 
   return (
     <div className="flex flex-col gap-2">
-      <h1 className="text-xl">Sıralama Kriterleri</h1>
+      <h1 className="text-xl text-[#697886]">Sıralama Kriterleri:</h1>
       <div className="flex gap-4">
         {sortOpt.map((sortOp, i) => <button className="bg-transparent hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4  rounded shadow-md" onClick={() => handleClick(sortOp)} key={i}>
           {sortOp}

@@ -2,8 +2,8 @@
     "flights": [
       {
         "id": 1,
-        "departure": "istanbul",
-        "destination": "izmir",
+        "departure": "İstanbul",
+        "destination": "İzmir",
         "departureCode":"ist",
         "destinationCode":"abd",
         "date": "10/2/2024",
@@ -19,8 +19,8 @@
       },
       {
         "id": 2,
-        "departure": "istanbul",
-        "destination": "izmir",
+        "departure": "İstanbul",
+        "destination": "İzmir",
         "departureCode":"ist",
         "destinationCode":"abd",
         "date": "10/2/2024",
@@ -36,8 +36,8 @@
       },
       {
         "id": 3,
-        "departure": "ankara",
-        "destination": "izmir",
+        "departure": "Ankara",
+        "destination": "İzmir",
         "departureCode":"esb",
         "destinationCode":"abd",
         "date": "10/2/2024",
@@ -53,8 +53,8 @@
       },
       {
         "id": 4,
-        "departure": "ankara",
-        "destination": "van",
+        "departure": "Ankara",
+        "destination": "Van",
         "departureCode":"esb",
         "destinationCode":"van",
         "date": "10/2/2024",
@@ -70,8 +70,8 @@
       },
       {
         "id": 5,
-        "departure": "erzurum",
-        "destination": "eskişehir",
+        "departure": "Erzurum",
+        "destination": "Eskişehir",
         "departureCode":"erz",
         "destinationCode":"aoe",
         "date": "10/2/2024",
@@ -87,8 +87,8 @@
       },
       {
         "id": 6,
-        "departure": "erzurum",
-        "destination": "eskişehir",
+        "departure": "Erzurum",
+        "destination": "Eskişehir",
         "departureCode":"erz",
         "destinationCode":"aoe",
         "date": "10/2/2024",
@@ -104,8 +104,8 @@
       },
       {
         "id": 7,
-        "departure": "bursa",
-        "destination": "konya",
+        "departure": "Bursa",
+        "destination": "Konya",
         "departureCode":"yei",
         "destinationCode":"kya",
         "date": "10/2/2024",
@@ -121,8 +121,8 @@
       },
       {
         "id": 8,
-        "departure": "ankara",
-        "destination": "izmir",
+        "departure": "Ankara",
+        "destination": "İzmir",
         "departureCode":"esb",
         "destinationCode":"abd",
         "date": "10/2/2024",
