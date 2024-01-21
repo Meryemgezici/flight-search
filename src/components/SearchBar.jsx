@@ -8,7 +8,7 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { SlCalender } from "react-icons/sl";
 import view from '../images/view.png';
-import tr from 'date-fns/locale/tr'; 
+import tr from 'date-fns/locale/tr';
 
 const SearchBar = () => {
   const [departureCode, setDepartureCode] = useState(null);

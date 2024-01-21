@@ -21,24 +21,28 @@ const ListPage = () => {
     const returnDate = searchParams.get("returnDate");
     const [date, setDate] = useState(departureDate);
     const [departureFlights, setDepartureFlights] = useState("yes");
-    const [destinationFlights, setDestinationFlights] = useState("yes");
+    const [destinationFlights, setDestinationFlights] = useState("no");
 
 
     useEffect(() => {
         if (departureCode && destinationCode && date) {
-            dispatch(filterFlights({ departureCode, destinationCode, date }));
+            dispatch(filterFlights({ departureCode, destinationCode, date, destinationFlights, departureFlights }));
         }
-    }, [dispatch, departureCode, destinationCode, date]);
+    }, [dispatch, departureCode, destinationCode, date, destinationFlights, departureFlights]);
 
     const handleGoButtonClick = () => {
+        setDepartureFlights("yes");
+        setDestinationFlights("no");
         setDate(departureDate)
-        dispatch(filterFlights({ departureCode, destinationCode, date,departureFlights }));
+        dispatch(filterFlights({ departureCode, destinationCode, date, destinationFlights, departureFlights }));
     };
 
     const handleReturnButtonClick = () => {
         if (returnDate) {
+            setDepartureFlights("no");
+            setDestinationFlights("yes");
             setDate(returnDate)
-            dispatch(filterFlights({ departureCode, destinationCode, date,destinationFlights }));
+            dispatch(filterFlights({ departureCode, destinationCode, date }));
         }
     };
 
@@ -48,21 +52,21 @@ const ListPage = () => {
                 <SearchBar />
                 <div className="flex flex-col relative mt-32">
                     <div className="flex flex-col gap-4  mx-auto mb-32 mt-7 max-w-[1000px]" >
-                            <div className="flex gap-6 mb-5">
-                                <button className="border px-6 py-2 text-xl bg-gradient-to-r  from-[#ff3f48] to-[#ff7461] text-white rounded-lg font-bold transition-all hover:from-[#ff7461] hover:to-[#ff3f48] w-[100px]"
-                                    onClick={handleGoButtonClick}
-                                >
-                                    Gidiş
-                                </button>
-                                {returnDate !== "null" && <button className={`border px-6 py-2 text-xl rounded-lg font-bold w-[100px] text-center ${returnDate ? "bg-gradient-to-r from-[#ff3f48] to-[#ff7461] text-white hover:from-[#ff7461] hover:to-[#ff3f48]" : "bg-gray-400 cursor-not-allowed"
-                                    }`}
-                                    onClick={handleReturnButtonClick}
-                                    disabled={!returnDate}
-                                >
-                                    Dönüş
-                                </button>}
+                        <div className="flex gap-6 mb-5">
+                            <button className="border px-6 py-2 text-xl bg-gradient-to-r  from-[#ff3f48] to-[#ff7461] text-white rounded-lg font-bold transition-all hover:from-[#ff7461] hover:to-[#ff3f48] w-[100px]"
+                                onClick={handleGoButtonClick}
+                            >
+                                Gidiş
+                            </button>
+                            {returnDate !== "null" && <button className={`border px-6 py-2 text-xl rounded-lg font-bold w-[100px] text-center ${returnDate ? "bg-gradient-to-r from-[#ff3f48] to-[#ff7461] text-white hover:from-[#ff7461] hover:to-[#ff3f48]" : "bg-gray-400 cursor-not-allowed"
+                                }`}
+                                onClick={handleReturnButtonClick}
+                                disabled={!returnDate}
+                            >
+                                Dönüş
+                            </button>}
 
-                            </div>
+                        </div>
                         {state.filteredFlights.length > 0 ? (
                             <>
                                 <div className="flex items-center gap-4 mb-10">
