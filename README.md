@@ -1,5 +1,4 @@
 <h1>Flight Search Web Site</h1>
- Projenin canlı linki: https://flight-search-amadeus.netlify.app/
 <h2>Kullanılan Teknolojiler</h2>
 
 Aşağıda, projenin geliştirilmesinde kullanılan teknolojilere dair detayları bulabilirsiniz.
